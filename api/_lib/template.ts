@@ -44,8 +44,7 @@ function getCss(theme: string, fontSize: string) {
       }
 
     body {
-        background: ${background};
-        background-image: radial-gradient(circle at 25px 25px, ${radial} 2%, transparent 0%), radial-gradient(circle at 75px 75px, ${radial} 2%, transparent 0%);
+        background-image: url(https://res.cloudinary.com/moishinetzer/image/upload/v1659362608/Instabis/Instabis_coming_soon_bg_1_m5watn-media_lib_thumb_k45df8.png)
         background-size: 100px 100px;
         height: 100vh;
         display: flex;
