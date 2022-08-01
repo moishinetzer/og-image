@@ -47,7 +47,6 @@ function getCss(
 
     body {
         background-image: url(https://res.cloudinary.com/moishinetzer/image/upload/v1659362608/Instabis/Instabis_coming_soon_bg_1_m5watn-media_lib_thumb_k45df8.png)
-        background-size: 100px 100px;
         height: 100vh;
         display: flex;
         text-align: center;
