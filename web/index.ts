@@ -1,4 +1,4 @@
-import type { ParsedRequest, Theme, FileType } from '../api/_lib/types';
+import type { FileType, ParsedRequest, Theme } from '../api/_lib/types';
 const { H, R, copee } = (window as any);
 let timeout = -1;
 
@@ -145,16 +145,11 @@ const markdownOptions: DropdownOption[] = [
 ];
 
 const imageLightOptions: DropdownOption[] = [
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-black.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-black-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-color-logo.svg' },
+    { text: 'Instabis', value: 'https://res.cloudinary.com/moishinetzer/image/upload/v1656193914/Instabis/logo_vojd7s.png' },
 ];
 
 const imageDarkOptions: DropdownOption[] = [
-
-    { text: 'Vercel', value: 'https://assets.vercel.com/image/upload/front/assets/design/vercel-triangle-white.svg' },
-    { text: 'Next.js', value: 'https://assets.vercel.com/image/upload/front/assets/design/nextjs-white-logo.svg' },
-    { text: 'Hyper', value: 'https://assets.vercel.com/image/upload/front/assets/design/hyper-bw-logo.svg' },
+    { text: 'Instabis', value: 'https://res.cloudinary.com/moishinetzer/image/upload/v1656193914/Instabis/logo_vojd7s.png' },
 ];
 
 
