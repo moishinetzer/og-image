@@ -12,7 +12,7 @@ const bold = readFileSync(`${__dirname}/../_fonts/Inter-Bold.woff2`).toString('b
 const mono = readFileSync(`${__dirname}/../_fonts/Vera-Mono.woff2`).toString('base64');
 
 function getCss(
-    // theme: string, 
+    _theme: string, 
     fontSize: string) {
     // let background = 'white';
     // let foreground = 'black';
@@ -105,7 +105,9 @@ function getCss(
 }
 
 export function getHtml(parsedReq: ParsedRequest) {
-    const { text, theme, md, fontSize, images, widths, heights } = parsedReq;
+    const { text, 
+        theme, 
+        md, fontSize, images, widths, heights } = parsedReq;
     return `<!DOCTYPE html>
 <html>
     <meta charset="utf-8">
@@ -113,7 +115,7 @@ export function getHtml(parsedReq: ParsedRequest) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         ${getCss(
-            // theme,
+            theme,
              fontSize)}
     </style>
     <body>
