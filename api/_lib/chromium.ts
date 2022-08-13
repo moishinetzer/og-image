@@ -7,6 +7,8 @@ async function getPage(isDev: boolean) {
   if (_page) {
     return _page;
   }
+
+  // @ts-ignore
   const options = await getOptions(isDev);
   const browser = await core.launch();
   _page = await browser.newPage();
